@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zeng Jia Ai — Curriculum Vitae</title>
-<meta name="description" content="IVANA MARCEN (曾佳愛) — Student of Ling Tung University.">
+<title>Shih-Hsun Chang — Curriculum Vitae</title>
+<meta name="description" content="Shih-Hsun Chang (張士勳) — Associate Professor, AI Application Technology, Ling Tung University.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600;700&display=swap" rel="stylesheet">
@@ -94,8 +94,7 @@
     font-size:.78rem;background:var(--accent-soft);color:var(--accent-deep);
     padding:3px 9px;border-radius:3px;
   }
-  .langs{font-size:.88rem;color:var(--muted);line-height:1.6;}
-  .langs div{margin-bottom:4px;}
+  .langs{font-size:.88rem;color:var(--muted);}
   .langs strong{color:var(--ink);font-weight:500;}
 
   /* ---------- Main column ---------- */
@@ -134,11 +133,11 @@
   .what .org{color:var(--accent-deep);font-weight:500;}
   .what p{font-size:.9rem;color:var(--muted);margin-top:3px;}
 
-  .ph{color:#A33;font-style:italic;}  /* placeholder */
+  .ph{color:#A33;font-style:italic;}  /* placeholder — replace these */
 
   footer{
     grid-column:1/-1;border-top:1px solid var(--rule);
-    margin-top:24px;padding-top:18px;
+    margin-top:8px;padding-top:18px;
     font-family:var(--mono);font-size:.72rem;color:var(--muted);
     display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;
   }
@@ -151,7 +150,7 @@
     .entry{grid-template-columns:1fr;gap:4px;}
   }
 
-  /* ---------- Print ---------- */
+  /* ---------- Print → clean PDF (Ctrl/Cmd+P → Save as PDF) ---------- */
   @media print{
     body{padding:0;font-size:11pt;background:#fff;}
     .cv{gap:28px;grid-template-columns:250px 1fr;max-width:none;}
@@ -170,124 +169,148 @@
 <body>
 <main class="cv">
 
+  <!-- ============ SIDEBAR ============ -->
   <aside class="side">
-    <h1 class="name">IVANA MARCEN</h1>
-    <div class="name-zh">曾佳愛</div>
-    <div class="role">Student</div>
-    <div class="affil">Dept. of Information Technology · College of Information Technology<br>Ling Tung University of Science and Technology, Taichung, Taiwan</div>
+    <h1 class="name">Shih-Hsun Chang</h1>
+    <div class="name-zh">張士勳</div>
+    <div class="role">Associate Professor</div>
+    <div class="affil">Dept. of AI Application Technology · College of Smart Technology<br>Ling Tung University of Science and Technology, Taichung, Taiwan</div>
 
     <div class="accent-bar"></div>
 
     <ul class="contact">
-      <li><span class="lbl">Email</span><a href="mailto:ivanamarcen@gmail.com"><span class="ph">ivanamarcen@gmail.com</span></a></li>
-      <li><span class="lbl">Web</span><a href="https://zengjiaai.github.io/">zengjiaai.github.io</a></li>
-      <li><span class="lbl">GitHub</span><a href="https://github.com/zengjiaai">@zengjiaai</a></li>
-      <li><span class="lbl">Location</span><a href="#"><span class="ph">No. 1號, Lingdong Rd, Chunshe Village, Nantun District, Taichung City, 408213</span></a></li>
-      <li><span class="lbl">Phone</span><span class="ph">0981471054</span></li>
+      <li><span class="lbl">Email</span><a href="mailto:you@teamail.ltu.edu.tw"><span class="ph">you@teamail.ltu.edu.tw</span></a></li>
+      <li><span class="lbl">Office</span><span class="ph">Building / Room — EDIT</span></li>
+      <li><span class="lbl">Web</span><a href="https://cshihhsun.github.io/">cshihhsun.github.io</a></li>
+      <li><span class="lbl">GitHub</span><a href="https://github.com/cshihhsun">@cshihhsun</a></li>
+      <li><span class="lbl">Scholar</span><a href="#"><span class="ph">add Google Scholar link</span></a></li>
+      <li><span class="lbl">ORCID</span><span class="ph">0000-0000-0000-0000</span></li>
     </ul>
 
     <h3>Technical Stack</h3>
     <div class="tags">
-      <span>Python</span><span>SQL</span><span>RFID Technology</span><span>IoT Architecture</span>
-      <span>MAS Algorithm</span><span>RAG</span><span>LLM Deployment</span>
-      <span>Github</span><span>Cloud Database</span>
+      <span>vLLM</span><span>Ollama</span><span>Qwen</span><span>RAG</span>
+      <span>Qdrant</span><span>Neo4j</span><span>BGE-M3</span><span>Python</span>
+      <span>.NET / C#</span><span>Docker</span><span>CUDA</span><span>YOLO</span>
+      <span>n8n</span><span>Prometheus/Grafana</span>
     </div>
 
     <h3>Languages</h3>
     <div class="langs">
-      <div><strong>Chinese</strong> – Native</div>
-      <div><strong>English</strong> – <span class="ph">Professional</span></div>
+      <strong>Chinese</strong> — native &nbsp;·&nbsp; <strong>English</strong> — <span class="ph">proficiency, EDIT</span>
     </div>
   </aside>
 
+  <!-- ============ MAIN ============ -->
   <div class="main">
 
     <section>
       <h2 class="sec-title">Profile</h2>
-      <p class="lede">An IT Application Technology student passionate about bridging the gap between advanced technology and practical industry solutions. Experienced in developing Smart Factory architectures, integrating Industrial IoT (such as RFID tracking and automation systems), and implementing smart scheduling algorithms. Currently focused on deploying AI/LLM infrastructure and computer vision solutions to drive digital transformation in modern production environments.</p>
+      <p class="lede">Associate Professor working at the intersection of applied large language models and practical AI infrastructure. I design and deploy retrieval-augmented generation (RAG) systems for Traditional Chinese, operate on-premise GPU infrastructure for teaching, and advise Taiwanese industry on adopting AI agents in production.</p>
     </section>
 
     <section>
       <h2 class="sec-title">Research Interests</h2>
       <ul class="ilist">
-        <li>Python Programming & Data Analysis</li>
-        <li>Smart Manufacturing & Industrial IoT (RFID)</li>
-        <li>Artificial Intelligence & Machine Learning Applications</li>
-        <li>Information System Analysis & Design</li>
-        <li>Database Management Systems (SQL)</li>
-        <li>Automation in Industrial Processing</li>
+        <li>Retrieval-Augmented Generation (hybrid retrieval, reranking, GraphRAG)</li>
+        <li>Local LLM deployment — Qwen family via vLLM / Ollama</li>
+        <li>Traditional Chinese NLP</li>
+        <li>AI agents, tool-calling & MCP integration</li>
+        <li>AI/ML education and GPU infrastructure</li>
+        <li>Computer vision (YOLO-family object detection)</li>
       </ul>
     </section>
 
     <section>
       <h2 class="sec-title">Education</h2>
+      <!-- EDIT: replace all of these with your real degrees, institutions, years -->
       <div class="entry">
-        <div class="when ph">2025－至今</div>
-        <div class="what"><h4 class="ph">嶺東科技大學 in 資訊科技系 </h4><span class="org ph">[在學中]</span></div>
+        <div class="when ph">YYYY–YYYY</div>
+        <div class="what"><h4 class="ph">Ph.D. in [Field]</h4><span class="org ph">[University] — EDIT</span></div>
       </div>
       <div class="entry">
-        <div class="when ph">2021－2024</div>
-        <div class="what"><h4 class="ph">印尼培德中學 SMA Perguruan Buddhi in 理科 </h4><span class="org ph">[畢業]</span></div>
+        <div class="when ph">YYYY–YYYY</div>
+        <div class="what"><h4 class="ph">M.S. in [Field]</h4><span class="org ph">[University] — EDIT</span></div>
+      </div>
+      <div class="entry">
+        <div class="when ph">YYYY–YYYY</div>
+        <div class="what"><h4 class="ph">B.S. in [Field]</h4><span class="org ph">[University] — EDIT</span></div>
       </div>
     </section>
 
     <section>
-      <h2 class="sec-title">Academic Experience</h2>
+      <h2 class="sec-title">Academic Appointments</h2>
+      <div class="entry">
+        <div class="when"><span class="ph">YYYY</span>–present</div>
+        <div class="what"><h4>Associate Professor</h4><span class="org">Dept. of AI Application Technology, Ling Tung University of Science and Technology</span></div>
+      </div>
+      <!-- EDIT: add prior appointments (Assistant Professor, etc.) here -->
+    </section>
+
+    <section>
+      <h2 class="sec-title">Teaching</h2>
+      <p style="font-size:.9rem;color:var(--muted);margin-bottom:14px;">Bilingual (English + 繁體中文) courses developed and delivered:</p>
+      <div class="entry">
+        <div class="when">Graduate</div>
+        <div class="what"><h4>Penetration Testing</h4><p>15-week course with an isolated KVM/libvirt lab (AD, DVWA, Juice Shop, Metasploitable targets).</p></div>
+      </div>
+      <div class="entry">
+        <div class="when">Undergrad</div>
+        <div class="what"><h4>Generative AI &amp; LLM Applications · RAG Systems</h4><p>Local LLM deployment, RAG pipelines, AI agents.</p></div>
+      </div>
+      <div class="entry">
+        <div class="when">Undergrad</div>
+        <div class="what"><h4>ASP.NET Core MVC &amp; Blazor (.NET 10)</h4><p>Full-stack web development with AI tool integration.</p></div>
+      </div>
+      <div class="entry">
+        <div class="when">Undergrad</div>
+        <div class="what"><h4>n8n Workflow Automation</h4><p>12-week self-hosted automation course.</p></div>
+      </div>
+      <div class="entry">
+        <div class="when">Undergrad</div>
+        <div class="what"><h4>Computer Vision with YOLOv8</h4><p>Object detection, license-plate recognition projects.</p></div>
+      </div>
+      <div class="entry">
+        <div class="when">Undergrad</div>
+        <div class="what"><h4>Data Science &amp; Machine Learning</h4></div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="sec-title">Selected Projects &amp; Industry Collaboration</h2>
+      <div class="entry">
+        <div class="when">Consultant</div>
+        <div class="what"><h4>AI Pump-Selection System</h4><span class="org">Santai Pump Factory</span><p>RAG + tool-calling agent over 1,500+ CFturbo design charts.</p></div>
+      </div>
+      <div class="entry">
+        <div class="when">Architect</div>
+        <div class="what"><h4>Green Trace (綠溯) DPP Platform — Security Architecture</h4><p>7-layer defense-in-depth design with STRIDE threat model and 24-week roadmap.</p></div>
+      </div>
+      <div class="entry">
+        <div class="when">Lead</div>
+        <div class="what"><h4>Campus RAG Q&amp;A System</h4><span class="org">Ling Tung AI Dept.</span><p>Hybrid BM25 + vector search, cross-encoder reranking, parent-child chunking.</p></div>
+      </div>
+      <div class="entry">
+        <div class="when">Lead</div>
+        <div class="what"><h4>"Pegasus" GPU Teaching Cluster</h4><p>Dual NVIDIA L40S server: JupyterHub, vLLM/Ollama serving, full Prometheus/Grafana/DCGM monitoring.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="sec-title">Publications &amp; Presentations</h2>
       <div class="entry">
         <div class="when"><span class="ph">2026</span></div>
-        <div class="what">
-          <h4>Laboratory Assistant</h4><span class="org">Dept. of Information Technology, Ling Tung University</span>
-        </div>
+        <div class="what"><h4>RAG-based Campus Q&amp;A: Design and Deployment</h4><span class="org ph">DLT2026 — verify venue/date</span><p>Conference presentation on hybrid retrieval and reranking for a campus assistant.</p></div>
       </div>
-    </section>
-
-    <section>
-      <h2 class="sec-title">Relevant Coursework</h2>
-      <p style="font-size:.9rem;color:var(--muted);margin-bottom:14px;">Key courses completed in Information Technology</p>
-      <div class="entry">
-        <div class="when">Core</div>
-        <div class="what"><h4>Python Programming & Application</h4><p>Studying basic programming syntax, data structures, algorithm design, and problem-solving using Python.</p></div>
-      </div>
-      <div class="entry">
-        <div class="when">Core</div>
-        <div class="what"><h4>Digital Logic Systems & Hardware</h4><p>Understanding Boolean logic, truth tables, and fundamental hardware components such as adders.</p></div>
-      </div>
-      <div class="entry">
-        <div class="when">Elective</div>
-        <div class="what"><h4>Web Development & Design</h4><p>Building interactive and responsive user interfaces using HTML, CSS, and basic JavaScript.</p></div>
-      </div>
-    </section>
-
-    <section>
-      <h2 class="sec-title">Selected Experience & Projects</h2>
-      <div class="entry">
-        <div class="when">Work</div>
-        <div class="what">
-          <h4>Production & Manual Processing Staff</h4><span class="org">Gainhow Printing Factory</span>
-          <p>Handling precision manufacturing tasks, manual processing, and ensuring production workflow efficiency within a fast-paced team environment.</p>
-        </div>
-      </div>
-      <div class="entry">
-        <div class="when">Project</div>
-        <div class="what">
-          <h4>Artificial Intelligence in Cancer Detection Report</h4><span class="org">Ling Tung University</span>
-          <p>Conducted a technical case study analysis on CNN algorithms for medical digital transformation and automated cancer detection systems.</p>
-        </div>
-      </div>
-      <div class="entry">
-        <div class="when">Project</div>
-        <div class="what">
-          <h4>Digital Logic & Full Adder Integration Project</h4><span class="org">Ling Tung University</span>
-          <p>Designed and analyzed truth tables, Boolean logic, and hardware logic gate simulations for an integrated systems course assignment.</p>
-        </div>
-      </div>
+      <!-- EDIT: add your journal/conference publications here. One <div class="entry"> per item. -->
+      <p class="ph" style="font-size:.9rem;">Add full publication list here — journals, conference papers, patents.</p>
     </section>
 
   </div>
 
   <footer>
-    <span>Zeng Jia Ai · Curriculum Vitae</span>
-    <span>Updated <span class="ph">Jun 2026</span></span>
+    <span>Shih-Hsun Chang · Curriculum Vitae</span>
+    <span>Updated <span class="ph">Jun 2026 — EDIT</span></span>
   </footer>
 </main>
 </body>
