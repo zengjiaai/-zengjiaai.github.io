@@ -94,7 +94,8 @@
     font-size:.78rem;background:var(--accent-soft);color:var(--accent-deep);
     padding:3px 9px;border-radius:3px;
   }
-  .langs{font-size:.88rem;color:var(--muted);}
+  .langs{font-size:.88rem;color:var(--muted);line-height:1.6;}
+  .langs div{margin-bottom:4px;}
   .langs strong{color:var(--ink);font-weight:500;}
 
   /* ---------- Main column ---------- */
@@ -133,11 +134,11 @@
   .what .org{color:var(--accent-deep);font-weight:500;}
   .what p{font-size:.9rem;color:var(--muted);margin-top:3px;}
 
-  .ph{color:#A33;font-style:italic;}  /* placeholder — replace these */
+  .ph{color:#A33;font-style:italic;}  /* placeholder */
 
   footer{
     grid-column:1/-1;border-top:1px solid var(--rule);
-    margin-top:8px;padding-top:18px;
+    margin-top:24px;padding-top:18px;
     font-family:var(--mono);font-size:.72rem;color:var(--muted);
     display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;
   }
@@ -150,7 +151,7 @@
     .entry{grid-template-columns:1fr;gap:4px;}
   }
 
-  /* ---------- Print → clean PDF (Ctrl/Cmd+P → Save as PDF) ---------- */
+  /* ---------- Print ---------- */
   @media print{
     body{padding:0;font-size:11pt;background:#fff;}
     .cv{gap:28px;grid-template-columns:250px 1fr;max-width:none;}
@@ -169,7 +170,6 @@
 <body>
 <main class="cv">
 
-  <!-- ============ SIDEBAR ============ -->
   <aside class="side">
     <h1 class="name">IVANA MARCEN</h1>
     <div class="name-zh">曾佳愛</div>
@@ -179,7 +179,7 @@
     <div class="accent-bar"></div>
 
     <ul class="contact">
-      <li><span class="lbl">Email</span><a href="mail to:ivanamarcen@gmail.com"><span class="ph">ivanamarcen@gmail.com</span></a></li>
+      <li><span class="lbl">Email</span><a href="mailto:ivanamarcen@gmail.com"><span class="ph">ivanamarcen@gmail.com</span></a></li>
       <li><span class="lbl">Web</span><a href="https://zengjiaai.github.io/">zengjiaai.github.io</a></li>
       <li><span class="lbl">GitHub</span><a href="https://github.com/zengjiaai">@zengjiaai</a></li>
       <li><span class="lbl">Location</span><a href="#"><span class="ph">No. 1號, Lingdong Rd, Chunshe Village, Nantun District, Taichung City, 408213</span></a></li>
@@ -195,23 +195,23 @@
 
     <h3>Languages</h3>
     <div class="langs">
-    <strong>Chinese</strong> – Native &nbsp;·&nbsp; <strong> English</strong> – <span class="ph">Professional</span>
+      <div><strong>Chinese</strong> – Native</div>
+      <div><strong>English</strong> – <span class="ph">Professional</span></div>
     </div>
   </aside>
 
-  <!-- ============ MAIN ============ -->
   <div class="main">
 
     <section>
       <h2 class="sec-title">Profile</h2>
-      <p class="lede">An IT Application Technology student passionate about bridging the gap between advanced technology and practical industry solutions. Experienced in developing Smart Factory architectures, integrating Industrial IoT (such as RFID tracking and automation systems), and implementing smart scheduling algorithms. Currently focused on deploying AI/LLM infrastructure and computer vision solutions to drive digital transformation in modern production environments
+      <p class="lede">An IT Application Technology student passionate about bridging the gap between advanced technology and practical industry solutions. Experienced in developing Smart Factory architectures, integrating Industrial IoT (such as RFID tracking and automation systems), and implementing smart scheduling algorithms. Currently focused on deploying AI/LLM infrastructure and computer vision solutions to drive digital transformation in modern production environments.</p>
     </section>
 
     <section>
       <h2 class="sec-title">Research Interests</h2>
       <ul class="ilist">
         <li>Python Programming & Data Analysis</li>
-        <li>Smart Manufacturing & Industrial IoT (RFID）　</li>
+        <li>Smart Manufacturing & Industrial IoT (RFID)</li>
         <li>Artificial Intelligence & Machine Learning Applications</li>
         <li>Information System Analysis & Design</li>
         <li>Database Management Systems (SQL)</li>
@@ -227,8 +227,7 @@
       </div>
       <div class="entry">
         <div class="when ph">2021－2024</div>
-        <div class="what"><h4 class="ph">印尼培德中學 SMA Perguruan
-Buddhi in 理科 </h4><span class="org ph">[畢業]</span></div>
+        <div class="what"><h4 class="ph">印尼培德中學 SMA Perguruan Buddhi in 理科 </h4><span class="org ph">[畢業]</span></div>
       </div>
     </section>
 
@@ -237,9 +236,9 @@ Buddhi in 理科 </h4><span class="org ph">[畢業]</span></div>
       <div class="entry">
         <div class="when"><span class="ph">2026</span></div>
         <div class="what">
-          <h4>Laboratory Assistant</h4><span class="org">Dept. of Information Technology, Ling Tung University</span></div>
+          <h4>Laboratory Assistant</h4><span class="org">Dept. of Information Technology, Ling Tung University</span>
+        </div>
       </div>
-      <!-- EDIT: add prior appointments (Assistant Professor, etc.) here -->
     </section>
 
     <section>
@@ -263,24 +262,29 @@ Buddhi in 理科 </h4><span class="org ph">[畢業]</span></div>
       <h2 class="sec-title">Selected Experience & Projects</h2>
       <div class="entry">
         <div class="when">Work</div>
-        <div class="what"><h4>Production & Manual Processing Staff</h4><span class="org">Gainhow Printing Factory</span><p>Handling precision manufacturing tasks, manual processing, and ensuring production workflow efficiency within a fast-paced team environment.</p>
+        <div class="what">
+          <h4>Production & Manual Processing Staff</h4><span class="org">Gainhow Printing Factory</span>
+          <p>Handling precision manufacturing tasks, manual processing, and ensuring production workflow efficiency within a fast-paced team environment.</p>
         </div>
-        
-     <div class="entry">
+      </div>
+      <div class="entry">
         <div class="when">Project</div>
-        <div class="what"><h4>Artificial Intelligence in Cancer Detection Report</h4><span class="org">Ling Tung University</span><p>Conducted a technical case study analysis on CNN algorithms for medical digital transformation and automated cancer detection systems.</p>
+        <div class="what">
+          <h4>Artificial Intelligence in Cancer Detection Report</h4><span class="org">Ling Tung University</span>
+          <p>Conducted a technical case study analysis on CNN algorithms for medical digital transformation and automated cancer detection systems.</p>
         </div>
-        
-    <div class="entry">
+      </div>
+      <div class="entry">
         <div class="when">Project</div>
-        <div class="what"><h4>Digital Logic & Full Adder Integration Project</h4><span class="org">Ling Tung University</span><p>Designed and analyzed truth tables, Boolean logic, and hardware logic gate simulations for an integrated systems course assignment.</p>
+        <div class="what">
+          <h4>Digital Logic & Full Adder Integration Project</h4><span class="org">Ling Tung University</span>
+          <p>Designed and analyzed truth tables, Boolean logic, and hardware logic gate simulations for an integrated systems course assignment.</p>
         </div>
-        </div>
-  </section>
-        
+      </div>
+    </section>
+
   </div>
 
-  
   <footer>
     <span>Zeng Jia Ai · Curriculum Vitae</span>
     <span>Updated <span class="ph">Jun 2026</span></span>
